@@ -1,0 +1,28 @@
+.page {
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cities-dropdown {
+  float: left;
+  margin: 50px;
+}
+
+.check-saved-city {
+  margin-left: 20px;
+}
+
+.saved-button {
+  float: left;
+}
+
+.saved-div {
+  float: left;
+}
+
+.display {
+  /* background-color: black; */
+  width: 50%;
+  float: right;
+  margin: 50px;
+}
