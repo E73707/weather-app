@@ -6,15 +6,11 @@ let weatherDescription = document.querySelector(".weather-description");
 let cardDisplay = document.querySelector(".future-weather");
 const apiCode = "a18b7b7d681f9f81151a685023e74a6e";
 
-const dayjs = require("day.js");
-const dayjsTimezone = require("dayjs-timezone");
-dayjs.extend(dayjsTimezone);
+const { Dayjs } = require("dayjs");
+var utc = require("dayjs/plugin/utc");
+var timezone = require("dayjs/plugin/timezone"); // dependent on utc plugin
 
-const city = "New York";
-const timezone = "America/New_York";
-const gmtTime = dayjs().tz("UTC");
-const localTime = gmtTime.clone().tz(timezone);
-console.log(localTime.format());
+Dayjs.extend(utc);
 
 let fetchWeather = function (lat, lon) {
   datesList = [];
