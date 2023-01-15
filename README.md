@@ -26,6 +26,11 @@ The "saved" dropdown menu includes:
 -  search button for searching the saved result
 -  delete button for removing the result from local storage and the saved dropdown.
 
+Link to deployed application
+https://e73707.github.io/weather-app/
+
+
+
 ![2023-01-15 (3)](https://user-images.githubusercontent.com/94885681/212524059-4d048506-ad18-42ea-b99b-9a7fd1f42080.png)
 
 ![2023-01-15 (4)](https://user-images.githubusercontent.com/94885681/212524081-c2636bba-1c84-4c91-8327-c700904614ba.png)
