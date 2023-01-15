@@ -21,8 +21,20 @@
 }
 
 .display {
-  /* background-color: black; */
   width: 50%;
   float: right;
   margin: 50px;
+}
+
+.future-weather {
+  display: inline-flex;
+  font-size: 11px;
+}
+
+.forecast-card {
+  padding: 15px;
+}
+
+.btn-sm {
+  margin: 10px;
 }
