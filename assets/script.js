@@ -44,7 +44,7 @@ let fetchWeather = function (lat, lon) {
         let currentWeather = data.list[0].weather[0].description;
         let mainIcon = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`;
         favBtnEl.value = nameOfCity;
-        mainTemp.textContent = `Todays temperature ${currentTemp} degrees celciius`;
+        mainTemp.textContent = `Todays temperature ${currentTemp} degrees celcius`;
         sunrise.textContent = `Humidity: ${humidityEL}`;
         sunset.textContent = `Wind Speed: ${windSpeedEl}`;
         weatherDescription.textContent = `Current weather: ${currentWeather}`;
@@ -66,9 +66,9 @@ let fetchWeather = function (lat, lon) {
               .format("D/M/YYYY")}`;
             card.classList.add("forecast-card");
             icon.src = `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}.png`;
-            humidityP.textContent = `Humidity: ${data.list[i].main.humidity}`;
-            maxTempP.textContent = `Max temp: ${data.list[i].main.temp}`;
-            letPressure.textContent = `Wind speed: ${data.list[i].wind.speed}`;
+            humidityP.textContent = `Humidity: ${data.list[i].main.humidity}%`;
+            maxTempP.textContent = `Max temp: ${data.list[i].main.temp} C`;
+            letPressure.textContent = `Wind speed: ${data.list[i].wind.speed} KMPH`;
             card.appendChild(dateEl);
             card.appendChild(heading);
             card.appendChild(humidityP);

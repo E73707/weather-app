@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 .page {
   justify-content: space-evenly;
   width: 100%;
@@ -6,6 +10,7 @@
 .cities-dropdown {
   float: left;
   margin: 50px;
+  width: 30%;
 }
 
 .check-saved-city {
@@ -29,6 +34,7 @@
 .future-weather {
   display: inline-flex;
   font-size: 11px;
+  justify-content: space-evenly;
 }
 
 .forecast-card {
@@ -37,4 +43,29 @@
 
 .btn-sm {
   margin: 10px;
+}
+
+.forecast-card {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: 2px;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  .display {
+    width: 90%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .forecast-card {
+    justify-content: space-between;
+    display: block;
+  }
+  .future-weather {
+    display: inline-flexbox;
+  }
 }
